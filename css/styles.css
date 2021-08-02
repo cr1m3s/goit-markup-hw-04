@@ -127,16 +127,25 @@ a:active {
   display: inline-block;
 }
 
-.phone-item::before {
-  content: '';
-  width: 20px;
-  height: 20px;
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icon {
+  height: 16px;
   margin-right: 10px;
-  background-image: url('../images/symbol-defs.svg#icon-mail');
 }
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-icon {
+  height: 16px;
+  width: 16px;
 }
 
 .top-bar {
@@ -196,6 +205,25 @@ a:active {
   flex-basis: calc(100% / 4 - 35px);
 }
 
+.svg-container {
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 270px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.svg-container:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.feature-svg {
+  width: 70px;
+}
+
 .feature-title {
   font-size: 14px;
   text-transform: uppercase;
@@ -208,6 +236,7 @@ a:active {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8;
+  letter-spacing: 0.4px;
 }
 
 /* Service */
@@ -265,9 +294,40 @@ a:active {
 
 .teammate-position {
   margin-top: 10px;
-  margin-bottom: var(--default-gap);
   font-size: 16px;
   color: var(--grey);
+}
+
+.social-media-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.teammate-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.teammate-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teammate-link:hover {
+  background-color: var(--blue);
+}
+
+.teammate-social-icon {
+  height: 20px;
+  width: 20px;
 }
 
 /* Footer */
@@ -293,12 +353,13 @@ a:active {
   color: var(--white);
   font-size: 14px;
   font-weight: inherit;
+  line-height: 2.5;
 }
 
 .footer-contact-item {
-  margin-top: 10px;
   color: var(--footer-contacts);
   font-size: 14px;
+  line-height: 2.2;
 }
 
 .footer-address-item:hover {
@@ -347,8 +408,8 @@ a:active {
 }
 
 .footer-icon {
-  width: 20px;
   height: 20px;
+  width: 21px;
 }
 
 /* Portfolio */
