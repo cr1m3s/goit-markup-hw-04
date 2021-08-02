@@ -331,6 +331,11 @@ a:active {
 .teammate-social-icon {
   height: 20px;
   width: 20px;
+  fill: var(--svg-grey);
+}
+
+.teammate-link:hover .teammate-social-icon {
+  fill: var(--white);
 }
 
 /* Clients */
