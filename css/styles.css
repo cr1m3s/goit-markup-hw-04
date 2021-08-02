@@ -142,8 +142,6 @@ a:active {
 
 .header-icon {
   fill: var(--grey);
-  height: 16px;
-  width: 16px;
   margin-right: 10px;
 }
 
@@ -156,7 +154,8 @@ a:active {
   background-image: linear-gradient(to right, var(--bg-color), var(--bg-color)),
     url('../images/img_bg.jpg');
   background-color: var(--dark-bg);
-  background-size: cover;
+  background-size: 1600px 600px;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -221,10 +220,6 @@ a:active {
 
 .svg-container:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.feature-svg {
-  width: 70px;
 }
 
 .feature-title {
@@ -329,8 +324,6 @@ a:active {
 }
 
 .teammate-social-icon {
-  height: 20px;
-  width: 20px;
   fill: var(--svg-grey);
 }
 
@@ -371,6 +364,7 @@ a:active {
 
 .company-logo-container:hover {
   border: 1px solid var(--blue);
+  cursor: pointer;
 }
 
 .clients-svg-item:not(:first-child) {
@@ -379,8 +373,6 @@ a:active {
 
 .client-svg-logo {
   fill: var(--svg-grey);
-  width: 106px;
-  height: 60px;
 }
 
 .company-logo-container:hover .client-svg-logo {
@@ -464,11 +456,6 @@ a:active {
   background-color: var(--blue);
 }
 
-.footer-icon {
-  height: 20px;
-  width: 21px;
-}
-
 /* Portfolio */
 
 .portfolio-buttons {
@@ -523,6 +510,12 @@ a:active {
 
 .project-card:not(:nth-child(-n + 3)) {
   margin-top: var(--default-gap);
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .project-card-info {
