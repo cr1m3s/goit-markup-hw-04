@@ -13,6 +13,7 @@
   --default-gap: 30px;
   --section-padding: 94px;
   --bg-color: #2f303a70;
+  --svg-grey: #afb1b8;
 }
 
 h1,
@@ -111,6 +112,7 @@ a:active {
 .nav-link:hover,
 .contact-link:hover {
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .current {
@@ -127,6 +129,10 @@ a:active {
   display: inline-block;
 }
 
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-link {
   display: flex;
   flex-direction: row;
@@ -135,17 +141,14 @@ a:active {
 }
 
 .header-icon {
+  fill: var(--grey);
   height: 16px;
+  width: 16px;
   margin-right: 10px;
 }
 
-.contact-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-icon {
-  height: 16px;
-  width: 16px;
+.contact-link:hover .header-icon {
+  fill: var(--blue);
 }
 
 .top-bar {
@@ -328,6 +331,55 @@ a:active {
 .teammate-social-icon {
   height: 20px;
   width: 20px;
+}
+
+/* Clients */
+.clients-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.clients-svg-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.client-svg-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.company-logo-container {
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--svg-grey);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo-container:hover {
+  border: 1px solid var(--blue);
+}
+
+.clients-svg-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.client-svg-logo {
+  fill: var(--svg-grey);
+  width: 106px;
+  height: 60px;
+}
+
+.company-logo-container:hover .client-svg-logo {
+  fill: var(--blue);
 }
 
 /* Footer */
