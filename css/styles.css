@@ -428,8 +428,8 @@ a:active {
 .social-media {
   display: flex;
   flex-direction: column;
-  margin-left: 85px;
-  margin-top: 10px;
+  padding-left: 85px;
+  padding-top: 10px;
 }
 
 .social-media-list {
